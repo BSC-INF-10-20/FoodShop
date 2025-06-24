@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Jane Otaniel & Victoria Kukada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap 3 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1000&q=60') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Helvetica Neue', sans-serif;
+      padding-top: 80px;
+      color: #ddd;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto 50px;
+      padding: 0 15px;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    .contact-header h2 {
+      font-size: 44px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #d4af37;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .contact-header p {
+      font-size: 16px;
+      margin-top: 0;
+      color: #eee;
+    }
+
+    .contact-box {
+      background: rgba(30, 30, 30, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+
+    .contact-info h4 {
+      color: #d4af37;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .contact-info p {
+      color: #f5e3a1;
+      margin-bottom: 10px;
+    }
+
+    .form-control {
+      background-color: #444;
+      border: 1px solid #666;
+      color: #eee;
+      border-radius: 0;
+      box-shadow: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-control::placeholder {
+      color: #bbb;
+    }
+
+    .form-control:focus {
+      background-color: #555;
+      border-color: #d4af37;
+      color: #fff;
+      outline: none;
+      box-shadow: 0 0 8px #d4af37;
+    }
+
+    .btn-custom {
+      background: linear-gradient(to right, #d4af37, #b8860b);
+      border: none;
+      color: #222;
+      padding: 8px 20px;
+      font-weight: 600;
+      font-size: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background: linear-gradient(to right, #f1c40f, #daa520);
+    }
+
+    .btn-custom:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .spinner {
+      display: inline-block;
+      margin-left: 8px;
+      color: white;
+    }
+
+    #success-message {
+      display: none;
+      margin-top: 15px;
+      color: #d4af37;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    #success-message a {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #d4af37;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .row.equal-height {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    @media (max-width: 767px) {
+      .row.equal-height {
+        display: block;
+      }
+    }
+
+    footer {
+      background-color: #222;
+      padding: 15px 0;
+      text-align: center;
+      color: #ccc;
+    }
+
+    footer .social-icons {
+      margin-bottom: 10px;
+    }
+
+    footer .social-icons a {
+      display: inline-block;
+      margin: 0 14px;
+      font-size: 24px;
+      text-decoration: none;
+      transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    }
+
+    footer .social-icons a.facebook {
+      color: #3b5998;
+    }
+
+    footer .social-icons a.linkedin {
+      color: #0077b5;
+    }
+
+    footer .social-icons a.instagram {
+      color: #e4405f;
+    }
+
+    footer .social-icons a.twitter {
+      color: #1da1f2;
+    }
+
+    footer .social-icons a:hover {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+
+    footer p {
+      font-size: 13px;
+      margin-top: 8px;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="contact-header">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out for collaborations or inquiries!</p>
+    </div>
+
+    <div class="row equal-height">
+
+      <div class="col-xs-12 col-md-5 contact-box contact-info">
+        <h4><span class="glyphicon glyphicon-user"></span> Victoria Kukada</h4>
+        <p><span class="glyphicon glyphicon-envelope"></span> victoria.kukada@gmail.com</p>
+        <p><span class="glyphicon glyphicon-earphone"></span> +265 990 286 862</p>
+
+        <hr style="border-color: #444;" />
+
+        <h4><span class="glyphicon glyphicon-user"></span> Jane Otaniel</h4>
+        <p><span class="glyphicon glyphicon-envelope"></span> otanieljane@gmail.com</p>
+        <p><span class="glyphicon glyphicon-earphone"></span> +265 885 177 053</p>
+
+        <hr style="border-color: #444;" />
+
+        <h4><span class="glyphicon glyphicon-map-marker"></span> Location:</h4>
+        <p>Blantyre, Malawi</p>
+      </div>
+
+      <div class="col-xs-12 col-md-6 contact-box">
+        <form id="contact-form" action="https://formspree.io/f/xldnpbnb" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" class="form-control" name="_replyto" id="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-custom" id="submit-btn">
+            Send Message <span class="spinner" id="spinner" style="display: none;"><i class="fa fa-spinner fa-spin"></i></span>
+          </button>
+        </form>
+        <div id="success-message"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" class="facebook" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/jane-otaniel-137a52306" class="linkedin" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+      <a href="https://instagram.com" class="instagram" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+      <a href="https://twitter.com" class="twitter" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 Jane & Victoria's FoodShop. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const successMessage = document.getElementById('success-message');
+    const spinner = document.getElementById('spinner');
+    const submitBtn = document.getElementById('submit-btn');
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      spinner.style.display = 'inline-block';
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          headers: { 'Accept': 'application/json' },
+          body: formData
+        });
+
+        if (response.ok) {
+          spinner.style.display = 'none';
+          successMessage.textContent = 'Thank you! Your form was submitted successfully.';
+          successMessage.style.display = 'block';
+          form.reset();
+          setTimeout(() => {
+            successMessage.innerHTML = '<a href="#" id="submit-another">Submit another form</a>';
+            document.getElementById('submit-another').onclick = ev => {
+              ev.preventDefault();
+              successMessage.style.display = 'none';
+              form.querySelector('input[name="name"]').focus();
+            };
+          }, 3000);
+        } else {
+          alert('Oops! There was a problem submitting your form.');
+        }
+      } catch {
+        alert('Oops! There was a problem submitting your form.');
+      } finally {
+        spinner.style.display = 'none';
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+
+</body>
+</html>
