@@ -1,6 +1,6 @@
 
   const scrollSections = document.querySelectorAll('.scrollable');
- const scrollAmount = 450;
+ const scrollAmount = 500;
   
   scrollSections.forEach(wrapper => {
     const scrollContent = wrapper.querySelector('.scroll-content');
